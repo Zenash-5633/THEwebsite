@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> transitions</title>
+<style>
+    #one {
+        width:100px;
+        height:100px;
+        background: black;
+        border:2px solid purple;
+        margin-bottom: 50px;
+        transition: transform .5s,background 1s, margin-left .4s, margin-top .2s;
+}   
+            #one:hover {
+        transform:rotate(200deg) scale(1.2);
+        background: grey;
+        border: black;
+        margin-left: 90px;
+        margin-top: 20px;
+}
+    #two {
+        width:100px;
+        height:100px;
+        background: black;
+        border:2px solid purple;
+        margin-bottom: 50px;
+        transition: transform .5s,background 1s,border 1s, margin-left 1s, margin-top 1s;
+} 
+        #two:hover {
+            margin-left: 60px;
+            margin-top: -50px;
+            transform: rotate(380deg) scale(.8);
+            background: pink;
+            border:5px solid rgb(224, 117, 109);
+
+}
+    #three {
+        width:100px;
+        height:100px;
+        background: black;
+        border:2px solid purple;
+        margin-bottom: 50px;
+        transition: transform 5s,background 1s, margin-left 5s, margin-top 5s;
+}   
+        #three:hover {
+            margin-left: 500px;
+            margin-top: 70px;
+            background: rgb(152, 46, 205);
+            border: 5px solid rgb(92, 22, 127);
+            transform: rotate(380deg) scale(.6);
+
+}
+    #four {
+        width:100px;
+        height:100px;
+        color:rgba(245, 222, 179, 0);
+        background: black;
+        border:2px solid purple;
+        margin-bottom: 50px;
+        transition: width 7s,height 7s,transform 5s, margin-left 7s, margin-top 7s,padding 2s,height 2s, background 7s, border 7s, color 7s,scale 7s;
+}   
+        #four:hover {
+            transform: rotate(360deg) scale(1.4);
+            border: 3px solid rgb(243, 163, 97);
+            background:rgb(243, 206, 97);
+            padding: 5px;
+            color: black;
+            margin-left: 70px;
+            margin-top: -200px;
+            text-align: center;
+            height:fit-content;
+}
+</style>
+</head>
+
+<body>
+<div id="one"></div>
+<div id="two"></div>
+<div id="three"></div>
+<div id="four"> Woah what does this look like?</div>
+
+</body>
