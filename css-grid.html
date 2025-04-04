@@ -1,0 +1,117 @@
+<!doctype html>
+            
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>grid demo</title>
+<link rel="icon" type="gif/ico" href="favicon.ico" sizes="16x16"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+<style>
+body {
+    background: rgb(227, 163, 233);
+    color:rgb(67, 28, 93);
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.container {  display: grid;
+  grid-template-columns: 1fr 1.2fr 0.9fr 0.9fr 1fr;
+  grid-template-rows: 0.6fr 1.4fr 1fr 1.6fr 0.4fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header Header Header Header Header"
+    "Nav Content Content Content Content"
+    "Nav Content Content Content Content"
+    "Nav Content Content Content Content"
+    "Footer Footer Footer Footer Footer";
+}
+
+.Header { grid-area: Header; 
+    background: rgb(227, 108, 211);
+    border: solid 5px rgba(95, 30, 117, 0.436);
+    border-bottom: solid 15px rgba(95, 30, 117, 0.436);
+    padding: 8px;
+}
+
+.Footer { grid-area: Footer; 
+    background:lightblue;
+    width: 100%;
+    /*position: fixed;*/
+    height: 50px;
+    color:black;
+    text-align: center;
+}
+
+.Nav { grid-area: Nav; 
+    background: black;
+    color:white;
+    border: 5px solid white;
+    padding:8px;
+    height:75%;
+    width: 100px; /*interesting gap. I should make the content background same color as body*/
+    overflow-x: hidden;
+    position:fixed;
+    margin-top: 123px; 
+    margin-left: 0px; 
+}
+
+.Content { grid-area: Content; 
+    background: rgb(227, 163, 233);
+    border:5px solid rgba(95, 30, 117, 0.436);
+    padding: 8px;
+        img {   
+            height: 315px
+    }
+}
+.right {
+    float:right;
+}
+</style>
+</head>
+     
+<body>
+    <div class="container">
+        <div class="Header">
+            <h1>Wow look at this grid layout</h1> 
+        </div>
+        <div class="Footer">
+            <p>This page is a DEMO.</p>
+        </div>
+        <div class="Nav">
+            <p> Buttons would go here</p>
+        </div>
+        <div class="Content">
+            <p> anything can go here</p>
+            <img src="blythefinished.png" alt="A drawing of my friend's oc, named Blythe. They have blue hair that gradients to a teal color, green eyes, pale skin, a grey prosthetic arm covered in stickers, and an outfit that includes a green crop-top with black sleeves and turtleneck, black sweatpants, and black boots with green details matching the top. Blythe is sitting on the floor with their left hand near their face with a smirking expression.">
+            <img src="deathdoodle.png" alt="A black and white drawing of a very pale woman with black hair.">
+            <p> like my old art for example. Or a song I really like. </p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/14WYmNQWvR2TTWoRp8t9Ml?utm_source=generator" width="75%" height="150px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>  
+    <p>oh that gap is ugly. Spotfy embed code is weird. Theres probably a better way to do it myself. Too bad I don't know how LOL. I am wondering if there is a way for me to make this box extend forever downwards.</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>adding something so I can scroll</p>
+    <p>my question is answered! </p>
+        </div>
+    </div>
+</body>
+</html>
