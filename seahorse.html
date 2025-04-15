@@ -46,7 +46,27 @@
   background:rgb(229, 232, 244);
   border: 5px solid;
   display: flex;
-  flex-flow: column;
+}
+.nav ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+.nav a {
+  border: 5px solid;
+  border-radius: 5px;
+  padding: 3px;
+  list-style: none;
+  align-self: flex-start;
+  justify-content: flex-start;
+  margin-top:10px;
+  display: block;
+  text-align: center;
+}
+.nav a:hover {
+  background: rgb(15, 15, 184);
+  color: rgb(229, 232, 244);
+  border: solid 5px rgb(15, 15, 184)
 }
 .article { grid-area: Article; 
   background:rgb(229, 232, 244);
@@ -61,7 +81,9 @@
   justify-content: space-evenly;
   flex-wrap:wrap;
   padding:5px;
-  align-items: baseline;
+  list-style: none;
+  row-gap: 0px;
+  column-gap: 15px;
 }
 .article img {float:right;
 width:400px;
@@ -90,7 +112,7 @@ border: 5px solid;
   </div>
 
   <div class="article">
-    <img src="seahorse.png" alt="seahorses are fun" />
+    <img src="seahorse2.png" alt="seahorses are fun" />
     <h1>SEAHORSE FACTS</h1>
     <h2>Name</h2>
     <p>The Latin name for seahorse is Hippocampus which means "Horse
