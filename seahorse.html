@@ -19,10 +19,12 @@
     font-family: "Covered By Your Grace", cursive;
     font-weight: 400;
     font-style: normal;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .container {  display: grid;
-  grid-template-columns: 3fr 7fr;
-  grid-template-rows: 150px 1fr 75px;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 150px 1fr 100px;
   grid-auto-columns: 1fr;
   gap: 15px 15px;
   grid-auto-flow: row;
@@ -76,14 +78,32 @@
 .footer { grid-area: Footer; 
   background: rgb(229, 232, 244);
   border: 5px solid;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap:wrap;
   padding:5px;
   list-style: none;
   row-gap: 0px;
   column-gap: 15px;
+}
+.footer div {
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  flex-flow: wrap column;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 0px;
 }
 .article img {float:right;
 width:400px;
@@ -95,7 +115,7 @@ border: 5px solid;
 <body>
 <div class="container">
   <div class="header">
-    <h1>header info here</h1>
+    <h1>Seahorses!!!</h1>
     <img src="seahorse.png" alt="seahorses are fun" />
   </div>
 
@@ -153,6 +173,8 @@ border: 5px solid;
   </div>
 
   <div class="footer">
+    <div>
+    <ul>
       <li>Seahorse Friends:</li>
       <li><a href="http://www.theseahorsetrust.org/seahorse-facts.aspx" target="_blank">The Seahorse Trust</a> |</li>
       <li><a href="http://www.nationalgeographic.com/animals/fish/group/seahorses/" target="_blank">National
@@ -161,6 +183,7 @@ border: 5px solid;
       <li><a href="http://www.allthesea.com/Seahorses.html" target="_blank">All
           The Sea</a></li>
     </ul>
+  </div>
     <p>&copy; Seahorse Serenity 2025</p>
   </div>
 </div>
